@@ -1,0 +1,22 @@
+{
+  "name": "tg13-node",
+  "version": "0.1.0",
+  "main": "./js/impress.js",
+  "description": "JavaScript outside the browser - Node.js",
+  "homepage": "http://pres.icanhasweb.net/tg13-node",
+  "license" : [
+    "http://bartaz.mit-license.org/"
+  ],
+  "main": [
+    "./js/impress.js"
+  ],
+  "keywords": [
+    "javascript",
+    "nodejs",
+    "tg13"
+  ],
+  "author": {
+    "name": "Arne Hassel",
+    "web": "http://icanhasweb.net"
+  }
+}

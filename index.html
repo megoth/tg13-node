@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Introduksjon til JavaScript | av Arne Hassel @megoth</title>
+    <meta name="description" content="En introduksjon til JavaScript designet for å holdes på TG13, som del av UiO: Campus TG" />
+    <meta name="author" content="Arne Hassel" />
+    <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+</head>
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Nettleseren din støtter ikke funksjonene som kreves av by impress.js (rammeverket brukt for å lage denne presentasjonen). Du vil derfor bare se en forenklet versjon av presentasjonen.</p>
+    <p>For å få den beste presentasjonen, anbefales nyeste versjon av <b>Chrome</b>, <b>Safari</b> eller <b>Firefox</b>.</p>
+</div>
+
+<div id="impress">
+
+    <section class="step slide" data-x="0" data-y="0" id="intro">
+        <h1>Node.js</h1>
+        <h2>JavaScript utenfor nettleseren</h2>
+        <p>Av Arne Hassel</p>
+        <ul>
+            <li>
+                <a href="http://twitter.com/megoth">@megoth</a>
+            </li>
+            <li>
+                <a href="http://icanhasweb.net">icanhasweb.net</a>
+            </li>
+        </ul>
+        <h2>Denne presentasjonen</h2>
+        <ul>
+            <li>
+                <a href="http://pres.icanhasweb.net/tg13-node">pres.icanhasweb.net/tg13-node</a>
+            </li>
+        </ul>
+    </section>
+
+    <div class="step" data-x="1000" data-y="0" id="node">
+        <a href="http://nodejs.org/">
+            <img src="images/nodejs-logo.png" />
+        </a>
+        <p>nodejs.org</p>
+    </div>
+
+    <div class="step slide" data-x="1000" data-y="1000" id="modules">
+        <h2>Moduler</h2>
+        <p><a href="http://www.commonjs.org/specs/modules/1.0/">modules/1.0 (CJS)</a></p>
+        <h3>require</h3>
+        <code>var fs = require("fs");</code>
+        <h3>exports</h3>
+        <code>// minModul.js
+exports.mittObjekt = {};
+// modul som vil trenger objektet
+var obj = require("./minModul").mittObjekt;</code>
+    </div>
+
+    <div class="step" data-x="2000" data-y="0" id="npm">
+        <a href="https://npmjs.org/">
+            <img src="images/npm-logo.png" />
+        </a>
+        <p>npmjs.org</p>
+    </div>
+
+    <div class="step slide" data-x="2000" data-y="1000" id="npm-functions">
+        <h2>Funksjoner</h2>
+        <p><a href="https://npmjs.org/doc/">npmjs.org/doc</a></p>
+        <h3>install</h3>
+        <code>> npm install &lt;package&gt;</code>
+        <h3>uninstall</h3>
+        <code>> npm uninstall &lt;package&gt;</code>
+        <h3>global install</h3>
+        <code>> npm install -g &lt;package&gt;</code>
+    </div>
+
+    <div class="step code" data-x="3000" data-y="0" id="code">
+        <h1>KODE!</h1>
+    </div>
+
+    <div class="step code" data-x="3000" data-y="1000" id="code-http-server">
+        <h1>HTTP server</h1>
+    </div>
+
+    <div class="step code" data-x="4000" data-y="0" data-rotate="-90" id="code-socket-server">
+        <h1>Socket server</h1>
+    </div>
+
+    <div class="step code" data-x="3000" data-y="-1000" data-rotate="-180" id="code-global-modules">
+        <h1>Globale moduler</h1>
+    </div>
+
+    <div class="step slide" data-x="5000" data-y="0" id="resources">
+        <h2>Ressurser</h2>
+        <ul>
+            <li>
+                <a href="http://nodejs.org">node.js</a>
+            </li>
+            <li>
+                <a href="http://expressjs.com/">Express</a>
+            </li>
+            <li>
+                <a href="http://dailyjs.com/">DailyJS</a>
+            </li>
+            <li>
+                <a href="http://busterjs.org/">Buster.JS</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="step code" data-x="6000" data-y="0" id="out">
+        <h1>Takk for meg ^_^</h1>
+    </div>
+
+</div>
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>

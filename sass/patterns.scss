@@ -1,0 +1,52 @@
+a {
+  color: $color-link;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+b,
+strong {
+  font-weight: bold;
+}
+body {
+  background-color: $color-background;
+  color: $color-text;
+}
+code {
+  font-family: $font-code;
+  font-size: 0.7em;
+  white-space: pre;
+}
+i,
+em {
+  font-style: italic;
+}
+ol,
+ul {
+  margin-top: 0.5em;
+}
+ol {
+  margin-left: 1.45em;
+  li {
+    list-style-type: decimal;
+  }
+}
+small {
+  font-size: 0.5em;
+}
+ul {
+  margin-left: 0.8em;
+  li {
+    list-style-type: square;
+  }
+}
+.code {
+  font-family: $font-code;
+  font-size: 5em;
+  white-space: nowrap;
+}
+.slide {
+  background-color: $color-slide;
+  color: $color-text;
+}
